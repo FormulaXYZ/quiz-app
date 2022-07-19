@@ -12,7 +12,7 @@ Screenshot (19).png
 
 ###  Live Link of The quiz-app
       
-      [live link] ()
+      [live link] (https://formulaxyz.github.io/quiz-app/)
 
 #### Description:
 
