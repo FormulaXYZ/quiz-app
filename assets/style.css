@@ -1,3 +1,4 @@
+/* styling the body starts here*/
 body{
     background-color:darkslategray;
     padding: 0;
@@ -15,6 +16,7 @@ body{
     border-radius: 10px;
     padding: 15%;
 box-shadow: 0 0 15px 4px;
+/* styling the buttons*/
 }
 .ans-btn{
     display: grid;

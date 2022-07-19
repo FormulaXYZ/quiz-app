@@ -1,16 +1,16 @@
-var startButton = document.getElementById('start-btn')
-var questionContainer = document.getElementById('question-container')
-var questionElement = document.getElementById('question')
-var answerButtonsElent = document.getElementById('answer-btn')
+var startButton = document.getElementById('start-btn');
+var questionContainer = document.getElementById('question-container');
+var questionElement = document.getElementById('question');
+var answerButtonsElent = document.getElementById('answer-btn');
 var time = 20; 
-var answerone = document.getElementById('ans1')
-var answertwo = document.getElementById('ans2')
-var answerthree = document.getElementById('ans3')
-var answerfour = document.getElementById('ans4')
+var answerone = document.getElementById('ans1');
+var answertwo = document.getElementById('ans2');
+var answerthree = document.getElementById('ans3');
+var answerfour = document.getElementById('ans4');
 
-
-startButton.addEventListener('click' , startGame)
-
+// by adding event we start the game
+startButton.addEventListener('click' , startGame);
+// we put timer here to set the time with the var limite the time for 20 sec.
 function startTime(){
 
   if (time > 0) { 
@@ -44,7 +44,7 @@ answerfour.textContent = questions [currentQuestionIndex].answer[3];
 }
 
 
-
+// let's put some logic to run the quiz.
 
 
 
@@ -69,7 +69,7 @@ function selectAnswer(selectedAnswer){
       setNextQuestion();
     };
 };
-
+// here are the questions of this app in array.
 var questions = [
     {
         
@@ -117,6 +117,7 @@ var questions = [
     },
 
 ];
+// add this eventListner.
 answerone.addEventListener("click", function () {
     selectAnswer(answerone.textContent);
   });
